@@ -1,5 +1,5 @@
 from mcpi.minecraft import Minecraft
-mc = Minecraft.create('mc2.tokyocodingclub.com')
+mc = Minecraft.create('server_name_here')
 
 x, y, z = 75, 125, 65
 

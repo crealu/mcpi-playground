@@ -6,7 +6,7 @@ bgx = 134
 bgy = 84
 bgz = 63
 
-#mc.setBlocks(bgx, bgy, bgz, bgx+30, bgy, bgz-10, 2)
+mc.setBlocks(bgx, bgy, bgz, bgx+30, bgy, bgz-10, 2)
 
 flowers = {
     'orchid': [38, 1],
@@ -24,9 +24,3 @@ for f in flowers:
         mc.setBlocks(bgx+1, bgy+1, bgz-5-zc, bgx+19, bgy+1, bgz-6-zc, 0)
     zc -= 2
     time.sleep(0.5)
-    
-#mc.setBlocks(bgx+1, bgy+1, bgz+1, bgx+29, bgy+1, bgz-5, 38, flowers['orchid'])
-#mc.setBlocks(bgx+1, bgy+1, bgz-5, bgx+29, bgy+1, bgz-10, 38, flowers['allium'])
-
-#me = mc.getPlayerEntityId('TCC_09')
-#mc.entity.setPos(me, bgx, bgy, bgz)

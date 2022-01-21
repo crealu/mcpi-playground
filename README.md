@@ -13,4 +13,5 @@ mcpi (installed with pip) https://pypi.org/project/mcpi/
 
 These scripts are created for the purpose of education and are meant to be used
 for learning or teaching programming concepts or to experiment with Minecraft
-gameplay.
+gameplay. Interfacing with a 3D environment like Minecraft allows programmers to
+get a visual understanding of fundamental programming concepts.

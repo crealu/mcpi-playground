@@ -6,13 +6,13 @@ x = 103
 y = 64
 z = 35
 
-#mc.setBlocks(x, y, z, x+30, y+40, z+30,brick)
-#mc.setBlocks(x+1, y+1, z+1, x+29, y+39, z+29, 0)
+mc.setBlocks(x, y, z, x+30, y+40, z+30,brick)
+mc.setBlocks(x+1, y+1, z+1, x+29, y+39, z+29, 0)
 
 # brick block
 brick = 45
 
-# second floor
+# build floor
 def secondFloor(yp):
     for xf in range(x+1, x+30):
         for zf in range(z+1, z+30):
@@ -21,8 +21,8 @@ def secondFloor(yp):
             else:
                 mc.setBlock(xf,y+yp, zf, 5)
 
-#secondFloor(20)
-#secondFloor(10)
+secondFloor(20)
+secondFloor(10)
 
 # stair colors
 purple = 203
@@ -32,29 +32,29 @@ tan = 135
 
 sc = [purple, red, white, tan]
 
-# make stairs
+# build stairs
 def buildStairs(xs, w, color):
     zs  = z + 27
     for ys in range(y+1, y+25):
         mc.setBlocks(x+xs, ys, zs, x+xs, ys, zs+w, color)
         xs+=1
 
-# buildStairs(5, 2, sc[1])
+buildStairs(5, 2, sc[1])
 
 cbx = 104
 cby = 66
 cbz = 53
 pb = 0
 
-changing = True
-
-while changing:
-    cb = mc.getBlock(cbx, cby, cbz)
-    if cb != pb and cb != 0:
-        buildStairs(5, 2, cb)
-        pb = cb
-
-    time.sleep(0.5)
+# changing = True
+#
+# while changing:
+#     cb = mc.getBlock(cbx, cby, cbz)
+#     if cb != pb and cb != 0:
+#         buildStairs(5, 2, cb)
+#         pb = cb
+#
+#     time.sleep(0.5)
 
 
 

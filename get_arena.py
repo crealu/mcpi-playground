@@ -1,5 +1,5 @@
 from mcpi.minecraft import Minecraft
-mc = Minecraft.create('mc2.tokyocodingclub.com')
+mc = Minecraft.create('server_name')
 
 import random
 import time
@@ -15,7 +15,7 @@ whole_arena = []
 f.write('my_arena = [ \n')
 
 whole_arena = [
-    [x1, x2, 
+    [x1, x2,
 
 def get_arena():
     for x in range(arena_x, arena_x+20):
@@ -25,6 +25,6 @@ def get_arena():
                 f.write(str(block) + ',\n')
         f.write('\n')
     print('got')
-    
+
 get_arena()
 f.close()

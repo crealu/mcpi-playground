@@ -1,5 +1,5 @@
 from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+mc = Minecraft.create('server_name')
 
 pos = mc.player.getTilePos()
 

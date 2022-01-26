@@ -1,5 +1,5 @@
 from mcpi.minecraft import Minecraft
-mc = Minecraft.create('mc2.tokyocodingclub.com')
+mc = Minecraft.create('server_name')
 import time
 
 x = 103
@@ -113,14 +113,3 @@ while changing:
 me = mc.getPlayerEntityId('TCC_02')
 mc.entity.setPos(me, x, y, z)
 '''
-
-
-
-
-
-
-
-
-    
-
-

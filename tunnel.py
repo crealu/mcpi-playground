@@ -1,5 +1,5 @@
 from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+mc = Minecraft.create('server_name')
 
 def buildTunnel(x, y, z, endOfTunnel):
     airBlock = 0

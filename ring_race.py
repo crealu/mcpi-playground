@@ -1,5 +1,5 @@
 from mcpi.minecraft import Minecraft
-mc = Minecraft.create('mc2.tokyocodingclub.com')
+mc = Minecraft.create('server_name')
 import random
 import time
 
@@ -33,7 +33,7 @@ def build_course():
             rand_x = random.randint(x0, x0+20)
             rand_y = random.randint(y0, y0+20)
             build_ring(rand_x, rand_y,  zl)
-            
+
 build_course()
 
 c = mc.getPlayerEntityId('TCC_05')
@@ -44,7 +44,7 @@ c_count = 0
 r_count = 0
 
 running = True
-while running:    
+while running:
     cp = mc.entity.getPos(c)
     rp = mc.entity.getPos(r)
 
@@ -62,6 +62,4 @@ while running:
                 r_count += 1
                 mc.postToChat("R score: " + str(r_count))
 
-    time.sleep(0.25)        
-        
-
+    time.sleep(0.25)

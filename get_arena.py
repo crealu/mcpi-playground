@@ -14,9 +14,6 @@ whole_arena = []
 
 f.write('my_arena = [ \n')
 
-whole_arena = [
-    [x1, x2,
-
 def get_arena():
     for x in range(arena_x, arena_x+20):
         for y in range(arena_y, arena_y+10):
